@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Form-Suggestion</title>
+</head>
+<body>
+
+    <div onmouseover="style.background ='rgba(206, 107, 107, 1.0)'" onmouseout="style.background ='rgba(206, 107, 107, .5)'" class="nav-container">
+        <h1 id="logo">Made at Home Meals</h1>
+
+        <nav class="navigation">
+            <ul>
+                <li> <a href="SuleckiJacobHomePage.html">Home</a> </li>
+                <li id="Recipies"> 
+                    <a href="#chicken">Recipies</a>
+                    <ul id="dropdown">
+                        <li> <a href="SuleckiJacobHomePage.html#chicken"> Chicken Wrap</a> </li>
+                        <li> <a href="SuleckiJacobHomePage.html#Soup"> Cheeseburger Soup </a> </li>
+                        <li> <a href="SuleckiJacobHomePage.html#Curry"> Curry </a> </li>
+                    </ul>
+                </li>
+                <li> <a href="About.html">About</a> </li>
+                <li> <a href="Table.html"> Conversions </a> </li>
+                <li> <a href="form.html"> Suggestion </a> </li>
+                <li> <a id="dateTime" onclick="dateTime()" href="SuleckiJacobHomePage.html"> Date/Time </a> </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="grid-container">
+        
+        <div class="description">
+            <h3>Suggestions</h3>
+            <p>Please fill out the form below to leave suggestions for new recipies to be added to the site!!</p>
+        </div>
+
+
+        <form action="http://ss1.ciwcertified.com/cgi-bin/process.pl" method="post">
+
+            <label for="firstName">First Name: </label> <br>
+            <input type="text" id="firstName" name="fName"> <br>
+
+            <label for="middleI">Middle Initial: </label> <br>
+            <input type="text" id="middleI" name="middleI"> <br>
+
+            <label for="lastName">Last Name: </label> <br>
+            <input type="text" id="lastName" name="lName"> <br>
+            
+            <h4>Please select recipie type:</h4>
+
+            <input type="checkbox" id="Veg" name="typeOfRecipie" value="Vegitarian">
+            <label for="Veg">Vegitarian</label> <br>
+
+            <input type="checkbox" id="Vegan" name="typeOfRecipie" value="Vegan">
+            <label for="Vegan">Vegan</label> <br>
+
+            <input type="checkbox" id="Pesc" name="typeOfRecipie" value="Pescatarian">
+            <label for="Pesc">Pescatarian</label> <br>
+
+            <input type="checkbox" id="gluten" name="typeOfRecipie" value="glutenFree">
+            <label for="gluten">Gluten Free</label> <br>
+
+            <input type="checkbox" id="dairy" name="typeOfRecipie" value="dairyFree">
+            <label for="dairy">Dairy Free</label> <br>
+
+            <input type="checkbox" id="none" name="typeOfRecipie" value="none">
+            <label for="none">Not any specific dietary restriction</label> <br>
+
+            <input type="checkbox" id="other" name="typeOfRecipie" value="other">
+            <label for="other">Other: </label> 
+            <input type="text" name="typeOfRecipie">
+
+            <h4>Please select the cooking skill-level:</h4>
+
+            <input type="radio" id="begin" name="typeOfRecipie" value="beginner">
+            <label for="begin">Beginner</label> <br>
+
+            <input type="radio" id="med" name="typeOfRecipie" value="medium">
+            <label for="med">Medium</label> <br>
+
+            <input type="radio" id="hard" name="typeOfRecipie" value="hard">
+            <label for="hard">Hard</label> <br> <br>
+
+
+            <label >Type in recipie below along with notes (please be descriptive):</label> <br>
+            <textarea name="recipie"></textarea> <br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+
+        </form>
+
+    </div>
+
+    <script src="SuleckiJacob.js"></script>
+</body>
+</html>
